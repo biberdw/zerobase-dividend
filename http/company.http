@@ -1,0 +1,18 @@
+### addCompany
+POST http://localhost:8080/company
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJncmFjZSIsInJvbGVzIjpbIlJPTEVfUkVBRCIsIlJPTEVfV1JJVEUiXSwiaWF0IjoxNjg1Mzc1OTk5LCJleHAiOjE2ODUzNzk1OTl9.0JL7v3Dkqm7uVKhNYLZuVWI5CIFAqQwBxkZgJYC-cbBizJrKbdPBqDVEV01OV8sOTQI3zK474Ttsgc08XQelbw
+
+{"ticker" :  "MMM"}
+
+### searchCompany
+GET http://localhost:8080/company
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJncmFjZSIsInJvbGVzIjpbIlJPTEVfUkVBRCIsIlJPTEVfV1JJVEUiXSwiaWF0IjoxNjg1MzY0MTUwLCJleHAiOjE2ODUzNjc3NTB9.JyClfSEjYvfcEqN7ctsDFgL0RBOoEV2zJ34R4xFD106H5ARbGt9sl-UVdKfFWBtvSA_XxnQddFqoyZca_3wriw
+
+### autocomplete
+GET http://localhost:8080/company/autocomplete?keyword=I
+
+### deleteCompany
+DELETE http://localhost:8080/company/MMM
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJncmFjZSIsInJvbGVzIjpbIlJPTEVfUkVBRCIsIlJPTEVfV1JJVEUiXSwiaWF0IjoxNjg1MzY0MTUwLCJleHAiOjE2ODUzNjc3NTB9.JyClfSEjYvfcEqN7ctsDFgL0RBOoEV2zJ34R4xFD106H5ARbGt9sl-UVdKfFWBtvSA_XxnQddFqoyZca_3wriw
